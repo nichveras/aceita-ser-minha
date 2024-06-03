@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
-html, body, h1
-{
+html, body, h1 {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Aboreto', cursive;
     box-sizing: border-box;
     overflow: hidden;
@@ -14,17 +13,16 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
 }
 
-h1{
+h1 {
     font-size: 40px;
     color: red;
     text-align: center;
     padding: 50px 10px;
 }
 
-.container{
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -33,13 +31,14 @@ h1{
     align-content: center;
 }
 
-.container-titulo{
+.container-titulo {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-content: center;
 }
-.container-button{
+
+.container-button {
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -64,16 +63,15 @@ button {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    
 }
-  
+
 button:hover {
     background-color: #fa0f7c;
     box-shadow: 0px 15px 20px rgba(240, 93, 124, 0.719);
     color: #fff;
     transform: translateY(-7px);
 }
-  
+
 button:active {
     transform: translateY(-1px);
 }
@@ -85,48 +83,57 @@ button:active {
     transform: translate(-50%, -50%);
 }
 
-/* #botao2 {
-    position: fixed;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-} */
-
-/* animação coração */
-
 .heart {
-    width: 200px;
-    height: 200px;
-    position: relative;
+    width: 300px;
+    height: 300px;
+    position: absolute;
     transform: rotate(-135deg);
     margin: 100px auto;
-    animation: pulse 1s infinite alternate
-  }
-  
+    animation: pulse 1s infinite alternate;
+    z-index: 1;
+}
+
 .square {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     background-color: #e74c3c;
 }
-  
+
 .circle {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 200px;
     position: absolute;
     background-color: #e74c3c;
 }
-  
+
 .top {
     top: 50%;
 }
-  
+
 .left {
-    left: 50%
+    left: 50%;
 }
-  
+
 @keyframes pulse {
     0% {transform: scale(0.9) rotate(-135deg);}
     100% {transform: scale(1.1) rotate(-135deg);}
 }
+
+/* .message { */
+    /* font-family: 'Aboreto', cursive; */
+    /* font-size: 1.0em; */
+    /* text-align: center; */
+    /* padding: 20px; */
+    /* border: 2px solid pink; */
+    /* border-radius: 10px; */
+    /* background-color: #fff0f5; */
+    /* position: fixed; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* display: none; */
+    /* color: #e74c3c; */
+    /* z-index: 2; */
+/* } */
